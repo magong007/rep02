@@ -31,6 +31,6 @@ runs:
 
     - name: Run goodbye.sh
       run: 
-        goodbye.sh
+        sh goodbye.sh
       shell: bash
 
