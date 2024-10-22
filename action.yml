@@ -33,7 +33,7 @@ runs:
       run: |
         #chmod 755 $GITHUB_ACTION_PATH/goodbye.sh
         cd ${{ github.action_path }}
-        echo "hello from " > ./greet.sh
+        echo "echo hello world " > ./greet.sh
         chmod 755 ./greet.sh
         ./greet.sh
         #sh goodbye.sh
