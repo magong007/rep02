@@ -1,1 +1,1 @@
-echo hello 
+echo "goodbye.sh from rep02" 
