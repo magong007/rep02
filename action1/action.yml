@@ -36,7 +36,7 @@ runs:
         chmod 755 ./greet.sh
         ./greet.sh
         chmod 755 ./goodbye.sh
-        ./goodbye.sh
+        goodbye.sh
         cat $GITHUB_WORKSPACE/f1
       shell: bash
 
