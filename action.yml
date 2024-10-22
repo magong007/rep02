@@ -36,7 +36,9 @@ runs:
         chmod 755 ./greet.sh
         ./greet.sh
         chmod 755 ./goodbye.sh
+        echo "running a script from rep02"
         ./goodbye.sh
+        echo "accessing file from rep01"
         cat $GITHUB_WORKSPACE/f1
       shell: bash
 
