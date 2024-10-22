@@ -32,9 +32,10 @@ runs:
     - name: Run goodbye.sh
       run: |
         #chmod 755 $GITHUB_ACTION_PATH/goodbye.sh
-        echo "hello from " > greet.sh
-        chmod 755 greet.sh
-        greet.sh
+        cd ${{ github.action_path }}
+        echo "hello from " > ./greet.sh
+        chmod 755 ./greet.sh
+        ./greet.sh
         #sh goodbye.sh
       shell: bash
 
