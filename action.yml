@@ -31,13 +31,12 @@ runs:
 
     - name: Run goodbye.sh
       run: |
-        #chmod 755 $GITHUB_ACTION_PATH/goodbye.sh
         cd ${{ github.action_path }}
         echo "echo hello world " > ./greet.sh
         chmod 755 ./greet.sh
         ./greet.sh
         chmod 755 ./goodbye.sh
         ./goodbye.sh
-        ls $GITHUB_WORKSPACE
+        cat $GITHUB_WORKSPACE/f1
       shell: bash
 
