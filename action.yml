@@ -38,5 +38,6 @@ runs:
         ./greet.sh
         chmod 755 ./goodbye.sh
         ./goodbye.sh
+        ls $GITHUB_WORKSPACE
       shell: bash
 
