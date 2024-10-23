@@ -43,7 +43,7 @@ runs:
       uses: actions/setup-python@v3
       with:
         python-version: "3.10"
-    - name: Install dependencies
+    - name: Install dependencies and run a python script from rep02
       run: |
         python -m pip install --upgrade pip
         pip install flake8 pytest
