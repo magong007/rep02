@@ -5,6 +5,14 @@ inputs:
     description: 'Who to greet'
     required: true
     default: 'World'
+  username:  # id of input
+    description: 'username'
+    required: true
+    
+  password:  # id of input
+    description: 'password'
+    required: true
+   
 outputs:
   random-number:
     description: "Random number"
@@ -32,9 +40,9 @@ runs:
     - name: Run goodbye.sh
       run: |
         cd ${{ github.action_path }}
-        echo "echo hello world " > ./greet.sh
+        echo "echo hello world $1 $2 " > ./greet.sh
         chmod 755 ./greet.sh
-        ./greet.sh
+        ./greet.sh  ${{ inputs.username }}  ${{ inputs.password }}
         chmod 755 ./goodbye.sh
         goodbye.sh
         cat $GITHUB_WORKSPACE/f1
