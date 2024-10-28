@@ -31,7 +31,6 @@ runs:
 
     - name: Run goodbye.sh
       run: |
-        #echo "secret: ${{secrets.username}}"
         cd ${{ github.action_path }}
         echo "echo hello world " > ./greet.sh
         chmod 755 ./greet.sh
