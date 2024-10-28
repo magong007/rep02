@@ -40,7 +40,7 @@ runs:
     - name: Run goodbye.sh
       run: |
         cd ${{ github.action_path }}
-        echo "echo hello world $1 $2 " > ./greet.sh
+        echo "echo hello world from  $1 with $2 " > ./greet.sh
         chmod 755 ./greet.sh
         ./greet.sh  ${{ inputs.username }}  ${{ inputs.password }}
         chmod 755 ./goodbye.sh
