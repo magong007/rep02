@@ -1,0 +1,4 @@
+[submodule ".github/workflows"]
+	path = .github/workflows
+	url = https://github.com/magong007/workflows.git
+	branch = main
